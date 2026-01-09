@@ -21,7 +21,7 @@ body {
 }
 
 .responsive-logo {
-    max-width: 13%;
+    max-width: 40px;
     height: auto;
     display: block;
 }
