@@ -62,7 +62,10 @@ body {
     display: grid;
     font-size: 22px;
     place-items: center;
-
+    font-weight: bold;
+    p {
+        font-weight: normal;
+    }
 }
 
 
