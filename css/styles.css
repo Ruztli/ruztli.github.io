@@ -14,54 +14,96 @@
 
 }
 
-.logo {
-    max-width: 40px;
-    height: auto;
-    display: block;
-    color: white;
-    
-}
-
-#logo-name {
-    margin: 0;
-    padding: 0;
-    margin-right: auto;
-}
-
-
 .navbar {
-    margin: 0;
-    padding: 1;
-    list-style: none;
-    font: 1.2em;
-    display: flex;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
-    background-color: #0c0c0c;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 0.75rem 1rem;
+background: #111;
+color: #fff;
 }
 
-.navbar a {  
-   display: flex;
-  align-items: center;
-  justify-content: center;
 
-  width: 110px;
-  height: 40px;
+.logo { font-weight: 700; font-size: 1.1rem; }
 
-  text-decoration: none;
-  color: white;
-  font-size: 18px;
 
-  border-radius: 8px;
-  transition: background 0.2s;
+.nav-links {
+display: flex;
+gap: 1rem;
+list-style: none;
+margin: 0;
+padding: 0;
 }
 
-.links {
-    color: var(--primary);
-    text-decoration: none;
-    font-size: 18px;
-    text-justify: auto;
-    hyphens: auto;
-    
+
+.nav-links a {
+color: #fff;
+text-decoration: none;
+padding: 0.4rem 0.6rem;
+border-radius: 6px;
+}
+
+
+.nav-links a:hover {
+background: rgba(255,255,255,0.1);
+}
+
+/* BOTÓN HAMBURGUESA */
+.hamburger {
+display: none;
+flex-direction: column;
+gap: 5px;
+background: none;
+border: none;
+cursor: pointer;
+}
+
+
+.hamburger span {
+width: 24px;
+height: 3px;
+background: white;
+border-radius: 2px;
+transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+
+/* ANIMACIÓN A X */
+.hamburger.active span:nth-child(1) {
+transform: translateY(8px) rotate(45deg);
+}
+
+
+.hamburger.active span:nth-child(2) {
+opacity: 0;
+}
+
+
+.hamburger.active span:nth-child(3) {
+transform: translateY(-8px) rotate(-45deg);
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+.hamburger { display: flex; }
+
+
+.nav-links {
+position: absolute;
+top: 56px;
+right: 0;
+background: #111;
+flex-direction: column;
+width: 200px;
+padding: 1rem;
+transform: translateX(100%);
+transition: transform 0.3s ease;
+}
+
+.nav-links.open {
+transform: translateX(0);
+}
 }
 
 .links:hover {

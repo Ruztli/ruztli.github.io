@@ -1,71 +1,74 @@
 <!DOCTYPE html>
 <html lang="es_MX">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Ruztli - Creador de Contenido</title>
-        <meta name="author" content="Ruztli" />
-        <meta name="description" content="Creador de contenido en YouTube, Instagram y TikTok sobre videojuegos." />
-       <link rel="icon" href="/images/avatar.png" type="image/x-icon"/>
-       <link rel="stylesheet" href="/css/styles.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <!-- OPEN PARAGRAPH PROTOCOL -->
-        <meta property="og:image" content="https://ruztli.com/images/preview.png" />
-        <meta property="og:image:alt" content="Ruztli OpenGraph Preview" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        <meta property="og:title" content="Ruztli - Creador de contenido" />
-        <meta property="og:description" content="Creador de contenido en YouTube, Instagram y TikTok sobre videojuegos." />
-        <meta property="og:locale" content="es_MX"/>
-        <meta prpoerty="og:locale:alternate" content="en_US"/>
-        <meta propert="og:site_name" content="Ruztli" />
+  <title>Ruztli - Creador de Contenido</title>
+  <meta name="author" content="Ruztli" />
+  <meta name="description" content="Creador de contenido en YouTube, Instagram y TikTok sobre videojuegos." />
 
-        <meta property="og:url" content="https://ruztli.com" />
-        <meta property="og:type" content="website" />
+  <link rel="icon" href="/images/avatar.png" type="image/x-icon" />
+  <link rel="stylesheet" href="/css/styles.css" />
 
-        <!-- Twitter Cards -->
-        <meta name="twitter:card" content="summary_large_image">
-        <meta property="twitter:domain" content="ruztli.com">
-        <meta property="twitter:url" content="https://ruztli.com">
-        <meta name="twitter:title" content="Ruztli - Creador de contenido">
-        <meta name="twitter:description" content="Creador de contenido en YouTube, Instagram y TikTok sobre videojuegos.">
-        <meta name="twitter:image" content="https://ruztli.com/images/preview.png">
-    </head>
-    <body>
-        <header>
-            
-            <nav class="navbar">
-                <hidden img src="logo.png" alt="Ruztli" class="logo" />
+  <!-- Open Graph -->
+  <meta property="og:image" content="https://ruztli.com/images/preview.png" />
+  <meta property="og:image:alt" content="Ruztli OpenGraph Preview" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:title" content="Ruztli - Creador de contenido" />
+  <meta property="og:description" content="Creador de contenido en YouTube, Instagram y TikTok sobre videojuegos." />
+  <meta property="og:locale" content="es_MX" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:site_name" content="Ruztli" />
+  <meta property="og:url" content="https://ruztli.com" />
+  <meta property="og:type" content="website" />
 
-                
-                <ul class="navbar">
-                <div>
-                <h2 id="logo-name">Ruztli</h2>
-                </div>
-                <li><a class="links" href="https://ruztli.com">Inicio</a></li>
-                <li><a class="links" href="https://ruztli.com/projects">Proyectos</a></li>
-                <li><a class="links" href="https://ruztli.com/blog">Blog</a></li>
-                <li><a class="links" href="https://ruztli.com/links">Links</a></li>
-                <li><a class="links" href="https://ruztli.com/about">Sobre mí</a></li>
-                <li><a class="links" href="https://ruztli.com/contact">Contacto</a>
-            </nav>
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:domain" content="ruztli.com" />
+  <meta name="twitter:url" content="https://ruztli.com" />
+  <meta name="twitter:title" content="Ruztli - Creador de contenido" />
+  <meta name="twitter:description" content="Creador de contenido en YouTube, Instagram y TikTok sobre videojuegos." />
+  <meta name="twitter:image" content="https://ruztli.com/images/preview.png" />
+</head>
 
-        </header>
-        <main class="container">
-            <section> 
-                <h1>Soy Ruztli</h1>
+<body>
 
-                <p id="description">Soy un <strong>creador de contenido</strong> en YouTube, Instagram y TikTok sobre videojuegos. Subo videos sobre Minecraft actualmente.</p>
-            </section>
-        </main>
+<header>
+  <nav class="navbar">
 
+    <div class="logo">Ruztli</div>
 
+    <ul class="nav-links" id="navLinks">
+      <li><a href="https://ruztli.com">Inicio</a></li>
+      <li><a href="https://ruztli.com/projects">Proyectos</a></li>
+      <li><a href="https://ruztli.com/blog">Blog</a></li>
+      <li><a href="https://ruztli.com/links">Links</a></li>
+      <li><a href="https://ruztli.com/about">Sobre mí</a></li>
+      <li><a href="https://ruztli.com/contact">Contacto</a></li>
+    </ul>
 
-    </body>
+    <button class="hamburger" id="hamburger" aria-label="Abrir menú">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
 
+  </nav>
+</header>
 
+<main class="container">
+  <section>
+    <h1>Soy Ruztli</h1>
+    <p id="description">
+      Soy un <strong>creador de contenido</strong> en YouTube, Instagram y TikTok sobre videojuegos.
+      Subo videos sobre Minecraft actualmente.
+    </p>
+  </section>
+</main>
 
+<script src="/js/navbar.js"></script>
 
-
-
+</body>
 </html>
