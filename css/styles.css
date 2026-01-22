@@ -8,8 +8,9 @@
 
 :root {
     --primary: #ffffff;
-    --background: #0c122c;
+    --background: #1d1d20;
     --essential: #f3c200;
+    --links: #3ca2ca;
 
 }
 
@@ -35,7 +36,7 @@
     font: 1.2em;
     display: flex;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
-   
+    background-color: #0c0c0c;
 }
 
 .navbar a {  
@@ -90,7 +91,7 @@ body {
     font-size: 16px;
 }
 
-.contact-reasons {
+#ul-list {
     list-style: disc;
     margin-left: 30px;
 }
@@ -104,13 +105,14 @@ body {
     color: #3ca2ca;
 }
 
-.links-page a {
+.click-link a {
     color: var(--essential);
     text-decoration: none;
     text-align: center;
 }
 
-.links-page a:hover {
-    color: #3ca2ca;
+.click-link a:hover {
+    color: var(--links);
 }
+
 /* ELIMINAR COMENTARIO HASTA ARRIBA PARA VER LOS ESTILOS */
