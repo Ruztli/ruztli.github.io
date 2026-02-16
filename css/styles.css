@@ -69,7 +69,6 @@ h2 { font-size: 2rem;}
 h3 { font-size: 1.5rem;}
 
 h4 { font-size: 1rem;}
-
 /*  */
 /* Footer */
 footer {
@@ -113,7 +112,10 @@ body {
 
 main {
     margin-left: 2rem;
+    margin-right: 2rem;
 }
+
+main :not(#home){margin-left: 0rem; margin-right: 0;}
 
 .container {
     display: grid;
@@ -128,7 +130,7 @@ main {
 
 
 #description {
-    font-size: 16px;
+    font-size: 18px;
 }
 
 #about {
