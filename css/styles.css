@@ -60,6 +60,8 @@
     background-color: #ffffff07;
 }
 
+/* Headliners */
+
 h1 { font-size: 2.5rem;}
 
 h2 { font-size: 2rem;}
@@ -67,6 +69,7 @@ h2 { font-size: 2rem;}
 h3 { font-size: 1.5rem;}
 
 h4 { font-size: 1rem;}
+
 /*  */
 /* Footer */
 footer {
@@ -108,6 +111,10 @@ body {
     height: 100%;
 }
 
+main {
+    margin-left: 2rem;
+}
+
 .container {
     display: grid;
     font-size: 22px;
@@ -129,8 +136,7 @@ body {
     font-size: 18px;
 }
 
-#ul-list {
-    font-weight: 700;
+.disc-list {
     list-style: disc;
     margin-left: 2rem;
 }
@@ -138,10 +144,12 @@ body {
 #email {
     color: var(--essential);
     text-decoration: none;
+    font-weight: 700;
 }
 
 #email:hover {
     color: #3ca2ca;
+    transition: 0.1s;
 }
 
 /* Web Links */
@@ -151,6 +159,7 @@ body {
     text-decoration: none;
     text-align: center;
     font-weight: 700;
+    transition: 0.1s;
 }
 
 .click-link a:hover {
