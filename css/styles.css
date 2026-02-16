@@ -130,6 +130,7 @@ body {
 }
 
 #ul-list {
+    font-weight: 700;
     list-style: disc;
     margin-left: 2rem;
 }
