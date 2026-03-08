@@ -39,8 +39,7 @@
         <meta name="twitter:image" content="https://ruztli.com/images/preview.png">
 
         <!-- SCHEMA.ORG -->
- <script type="application/ld+json">
-
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebSite",
@@ -53,7 +52,12 @@
     "@type": "Person",
     "name": "Ruztli"
   },
-  "logo": "https://ruztli.com/images/avatar.png",
+  "logo": {
+    "@type": "ImageObject",
+    "url": "https://ruztli.com/images/avatar.png",
+    "width": 512,
+    "height": 512
+  },
   "sameAs": [
     "https://www.youtube.com/@ruztli",
     "https://twitter.com/ruztlii",
@@ -62,9 +66,8 @@
     "https://github.com/ruztli"
   ]
 }
+</script>
 
-        </script>
-        
         <!-- END SCHEMA.ORG -->
 
     </head>
