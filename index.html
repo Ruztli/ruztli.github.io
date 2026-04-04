@@ -42,28 +42,38 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": "Ruztli",
-  "alternateName": "ruztli.com",
-  "url": "https://ruztli.com",
-  "description": "Sitio personal de Ruztli – Videojuegos, proyectos y creaciones.",
-  "inLanguage": "es",
-  "publisher": {
-    "@type": "Person",
-    "name": "Ruztli"
-  },
-  "logo": {
-    "@type": "ImageObject",
-    "url": "https://ruztli.com/images/avatar.png",
-    "width": 512,
-    "height": 512
-  },
-  "sameAs": [
-    "https://www.youtube.com/@ruztli",
-    "https://twitter.com/ruztlii",
-    "https://instagram.com/ruztlii",
-    "https://www.twitch.tv/ruztli",
-    "https://github.com/ruztli"
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://ruztli.com/#website",
+      "url": "https://ruztli.com",
+      "name": "Ruztli",
+      "alternateName": "ruztli.com",
+      "description": "Sitio personal de Ruztli – Videojuegos, proyectos y creaciones.",
+      "inLanguage": "es",
+      "publisher": {
+        "@id": "https://ruztli.com/#person"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://ruztli.com/#person",
+      "name": "Ruztli",
+      "url": "https://ruztli.com",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://ruztli.com/images/avatar.png",
+        "width": 512,
+        "height": 512
+      },
+      "sameAs": [
+        "https://www.youtube.com/@Ruztli",
+        "https://twitter.com/ruztlii",
+        "https://instagram.com/ruztlii",
+        "https://www.twitch.tv/ruztli",
+        "https://github.com/ruztli"
+      ]
+    }
   ]
 }
 </script>
